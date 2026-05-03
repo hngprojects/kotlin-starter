@@ -84,8 +84,13 @@ kotlin-starter/
 
 ## iOS Setup
 
-The `iosApp/` Xcode project must be created or regenerated via Android Studio's KMP project wizard.
-The Swift files (`ContentView.swift`, `iOSApp.swift`) are already present.
+Open `iosApp/iosApp.xcodeproj` in Xcode and run on a simulator or device.
+
+If you renamed the package with `rename.sh`, also update the iOS bundle identifier:
+
+1. Open `iosApp/iosApp.xcodeproj` → select the `iosApp` target
+2. **General → Identity → Bundle Identifier** — set to your new package name
+3. Optionally update the display name under **General → Display Name**
 
 ## License
 
