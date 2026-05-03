@@ -3,8 +3,20 @@ name: Android Build
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'composeApp/**'
+      - 'androidApp/**'
+      - 'gradle/**'
+      - '*.gradle.kts'
+      - 'gradle.properties'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'composeApp/**'
+      - 'androidApp/**'
+      - 'gradle/**'
+      - '*.gradle.kts'
+      - 'gradle.properties'
   workflow_dispatch:
 
 concurrency:
